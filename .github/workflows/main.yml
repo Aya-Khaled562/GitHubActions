@@ -9,4 +9,10 @@
       steps:
         - name: Print a welcome message
           run: echo "Welcome to my firt github action workflow"  
+
+        - name: Checkout repository
+          uses: actions/checkout@v6.0.2 
+
+        - name: List repository files
+          run: ls -la
         
