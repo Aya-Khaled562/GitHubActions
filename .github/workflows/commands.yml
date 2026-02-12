@@ -1,0 +1,13 @@
+name: Expressions
+on: 
+  workflow_dispatch:
+
+jobs:
+  command_job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+         deprecated=true
+         if [[deprecated ]]; then
+           echo "::warning::Deprecated function found"
+         fi
